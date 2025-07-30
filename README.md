@@ -1,1 +1,31 @@
-# das-2-2025-2
+# Aula 30/07
+- AWS well-architected framework - https://aws.amazon.com/pt/architecture/well-architected/
+    - Guia de boas práticas da AWS.
+    - Fundamental para entender como funciona migração para AWS, como trabalhar com a AWS, etc.
+- Papéis de um arquiteto cloud
+    - Planeja soluções técnicas
+    - Pesquisa as especificações desejadas na solução
+    - Comunica com todos os setores envolvidos para ter uma visão clara e extensa do que deve ser feito e por quê.
+    - Desenhar o o sistema e como ele deverá ser feito
+    - Acompanhar e auxiliar a equipe de desenvolvimento
+- Pilares AWS
+    - Excelência Operacional
+        - Rodar e monitorar sistemas
+        - Apoiar continuamente os processos
+        - Acompanhar o todo do workload como um código
+        - Automatizar os processos utilizados na sua empresa na AWS.
+    - Segurança
+        - Criar um mecanismo de identidade seguro, a identidade do usuário sempre é o ponto mais fraco.
+        - Rastreabilidade, é preciso ser capaz de saber tudo que acontece dentro da infraestrutura.
+        - Aplicar segurança em todas as camadas. Ter várias camadas de segurança para garantir a segurança estrutural.
+        - Fazer mitigação de estratégia.
+    - Confiabilidade
+        - Recuperar sozinho e rápido. (Cópias)
+        - Dinâmicamente acompanhar a demanda computacional do sistema.
+        - Mitigar disrupção, reconhecer pontos de falha.
+    - Eficiência/Performance
+        - Utilizar os serviços de maneira inteligente.
+        - Democatrizar o uso de tecnologias novas.
+        - Escolher e manter recursos eficientes.
+    
+    
