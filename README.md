@@ -8,7 +8,7 @@
     - Comunica com todos os setores envolvidos para ter uma visão clara e extensa do que deve ser feito e por quê.
     - Desenhar o o sistema e como ele deverá ser feito
     - Acompanhar e auxiliar a equipe de desenvolvimento
-- Pilares AWS
+- Pilares AWS architected framework
     - Excelência Operacional
         - Rodar e monitorar sistemas
         - Apoiar continuamente os processos
@@ -27,5 +27,19 @@
         - Utilizar os serviços de maneira inteligente.
         - Democatrizar o uso de tecnologias novas.
         - Escolher e manter recursos eficientes.
-    
-    
+    - Otimazação de custo
+        - Medir os custos
+        - Eliminar o que não está sendo utilizado
+        - Pagar a medida que se usa.
+        - Usar serviços gerenciados pela AWS
+    - Sustentabilidade
+        - Utilizar os recursos de forma sustentável/coerente
+- AWS Well-Architetcted Tool
+    - Fornece guias e avaliações do seu sistema para verificar se seu sistema está de acordo com o well-architected framework.
+- Reconhecer trade-offs ao determinar uma solução
+    - Observabilidade: Cloudwatch - Importante para monitorar a saúde das instâncias de EC2, notificando o administrador e escala automaticamente instancias do EC2
+    - IaC - usar código para organizar e automatizar a infraestrutura do sistema.
+    - Recursos são descartáveis - Sempre é importante manter em mente que recursos podem e vão estragar e mitigar esse problema com redundâncias.
+- Criptografia em trânsito vs em descanso
+    - Trânsito - criptografia de tráfego de dados (HTTPS)
+    - Descanso - criptografia de arquivos salvos, permanentes.
