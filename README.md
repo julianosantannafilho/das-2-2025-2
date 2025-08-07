@@ -43,3 +43,80 @@
 - Criptografia em trânsito vs em descanso
     - Trânsito - criptografia de tráfego de dados (HTTPS)
     - Descanso - criptografia de arquivos salvos, permanentes.
+# Aula 06/08
+- Localização da AWS
+    - Região
+        - Área geográfica onde contém duas ou mais Availability Zones
+        - Comunicação de backbone da AWS
+    - Availibility Zones
+        - Conjunto de data centers
+        - Distribuição de serviços
+        - Redundância
+        - Tolerante a falhas
+        - Recomendado replicar seus serviços entre AZs
+        - Alta disponibilidade
+    - Local Zones
+        - Uma extensão da região em lugares onde possuem uma demanda e não possuem infraestrutura para se criar uma região nova
+        - Acesso direto a local zone, não na região onde está hospedada
+    - Data Centers
+        - Gerenciado exclusivamente pela AWS
+    - Edge Locations (PoPs - Points of Presence)
+        - Data centers e servidores localizados perto dos clientes de forma a garantir baixa latência
+        - Conteúdo de grande acesso é mantido nas edge location, se não estiver na edge locations, é feito uma requisição para o cache regional e senão na região em si.
+        - Content Delivery Network (Cloudfront, Cloudflare)
+        - Edge Location -> Regional edge cache -> Region
+- Segurança
+    - Modelo de Responsabilidade Compartilhada
+       - AWS: Responsável pela segurança física da nuvem
+       - Clientes: Responsável pela segurança dentro da nuvem, nível Sistema operacional pra baixo
+       - IaaS: Infrastrucutre as a Service
+       - PaaS: Platform as a Service
+       - SaaS: Software as a Service
+    - Pilares de Segurança
+       - Implementar monitoramento extenso para funcionários e pessoas com acesso a qualquer elemento da nuvem, o ser humano sempre é o ponto mais fraco.
+       - Proteger os dados em trânsito (TLS) e em descanso (client-side encryption)
+       - Aplicar mais mecanismos de segurança e em diferentes camadas
+       - Manter os dados longe da pessoa, somente o acesso estritamente necessário para a função que o usuário irá realizar (Princípio de privilégio mínimo)
+       - Rastreabilidade
+       - Estar preparado para problemas de segurança
+       - Automatizar os processos de segurança
+    - Client-side Encryption
+       - Antes do dado ser mandado pelo cliente, ele é criptografado
+    - Server-side Encryption
+       - O cliente manda o dado criptografado pelo TLS, ou não, e quando o dado é recebido pelo servido, ele é criptografado pelo servidor dentro da AWS
+    - Autenticação
+       - MFA - oq tem
+       - Usuário e senha - oq sabe
+       - Biometria - oq é
+       - IAM
+    - Autorização
+       - Allow / Deny
+       - IAM
+    - IAM
+       - Criar usuários, grupos , policies, roles
+       - Integrar com outros serviços
+       - Controlar acesso em grupo e individual
+       - Suporta MFA
+       - Configurar permissão em nível de arquivo (Granularidade)
+       - Caso não for dado nenhuma permissão, a AWS não permite que um recurso seja utilizado sem permissão explícita
+       - Access Key e Secret Access Key, Chaves únicas e longevas de acesso.
+       - Acesso programático (powershell) Acesso interface (AWS web)
+    - Boas práticas
+       - Principio de privilégio minimo
+       - MFA
+       - Credenciais temporárias
+       - Rotacionar Access keys
+       - Senhas complexas
+       - Assegurar credenciais local
+       - Usar o AWS Organizations
+       - Ativar o AWS CloudTrail
+       - Proteger o usuário Root
+       - Use usuários administradores ao invés de utilizar o root, somente use o root se, e somente se, for explicitamente necessário
+       - Crie grupos com permissões distintas
+    - Roles
+       - Credencial temporária
+       - Conta e Software
+       - Access Key e Secret Access Key são temporárias
+      
+      
+        
